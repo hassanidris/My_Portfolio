@@ -27,10 +27,28 @@ a {
     text-decoration: none;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Oswald', sans-serif;
-    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #4A4E69;
 }
+
+h1 {
+    font-size: 4.5rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.725rem;
+}
+
+p {
+    margin-bottom: 1.125em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+
 
 .container {
     margin: 0 auto;
@@ -79,22 +97,36 @@ h1 {
   
   .nav__item + .nav__item {
     margin-left: 50px;
-  
-    /* border: 2px solid red; */
   }
 
 .banner-text {
-    width: 40%;
+    width: 50%;
+}
+
+.banner__hello {
+    color: #707070;
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+}
+
+.banner__iam {
+    font-family: 'Lato', sans-serif;
+    color: #707070;
+    text-transform:capitalize;
+    font-size: 3.5rem;
+}
+
+.banner__description {
+    color: #707070;
+    font-size: 3rem;
+    line-height: 1.5;
+
 }
 
 .banner-image {
     margin-top: 10px;
     width: 44%;
-    /* background: url(images/my_photo.png) no-repeat right bottom; */
-    
     align-items: baseline;
-
-    border: 1px solid red;
 }
 
 /*  ----  Section About Style  ----  */
@@ -111,4 +143,28 @@ h1 {
     width: 60%;
 }
 
+.info-about__title {
+    color: white;
+}
+
+
+.info-skills__title {
+    color: white;
+}
+
+/*  ----  Section Experience Style  ----  */
+
+.experience__title {
+    height: 400px;
+    justify-content: center;
+}
+
+/*  ----  Section Portfolio Style  ----  */
+
+
+
+.portfolio__title {
+    height: 400px;
+    justify-content: center;
+}
 
