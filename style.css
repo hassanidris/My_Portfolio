@@ -43,16 +43,17 @@ h1 {
 .header {
     height: 100vh;
     background: url(images/banner_shape.png) no-repeat right center;
+    
     z-index: 999;
 }
 
-.nav {
+/* .nav {
     height: 20vh;
-}
+} */
 
 .banner {
     background: url(images/my_photo.png) no-repeat right;
     background-origin: border-box;
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
 }
