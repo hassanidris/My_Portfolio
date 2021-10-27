@@ -124,6 +124,15 @@ p {
   .nav__item {
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
+    
+  }
+
+  .nav__link {
+    color: #4A4E69;
+  }
+
+  .nav__link:hover {
+    color: #c9ada7;
   }
   
   .nav__item + .nav__item {
