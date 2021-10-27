@@ -1,3 +1,16 @@
+/*
+
+COLORS:
+- white: #ffffff
+- Paieg: #f2e9e4
+- Dark Paieg: #c9ada7
+- Meaty: #9a8c98
+- Normal blue: #4a4e69
+- Dark blue: #22223b
+
+*/
+
+
 
 /*  ----  Uneversal Style  ----  */
 
@@ -42,6 +55,16 @@ h2 {
     font-size: 1.725rem;
 }
 
+h3 {
+    font-weight: 300;
+    font-size: 22px;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 22px;
+}
+
 p {
     margin-bottom: 1.125em;
     font-family: 'Lato', sans-serif;
@@ -62,14 +85,22 @@ p {
     align-items: center;
 }
 
+.direction {
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+
+.between {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
 
 /*  ----  Header Style  ----  */
 
 .header {
     height: 100vh;
     background: url(images/banner_shape.png) no-repeat right;
-    
-    z-index: 999;
 }
 
 .logo {
@@ -142,7 +173,7 @@ p {
     background: url(images/about_shape.png) no-repeat left;
     width: 60%;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .info-about__title {
@@ -150,23 +181,189 @@ p {
 }
 
 .info-skills {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    margin-left: 50px;
+    width: 40%;
 }
 
 .info-skills__title {
     color: white;
 }
 
+.info-skills__list {
+    list-style: none;
+}
+
+.info-skills__item {
+    font-size: .7rem;
+    background-color: white;
+    color: #4A4E69;
+    padding: 3px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .info-skills__item span {
+    justify-content: space-between;
+} */
+.info-skills__percentage {
+    text-align: right;
+}
+
+.l40 {
+    width: 50%;
+}
+
+.l30 {
+    width: 40%;
+}
+
+.l80 {
+    width: 90%;
+}
+
+.l60 {
+    width: 70%;
+}
+
+.l70 {
+    width: 80%;
+}
+
 /*  ----  Section Experience Style  ----  */
 
-
+.experience {
+    width: 100%;
+    margin-top: 30px;
+}
 
 .experience__title {
-    height: 400px;
+    
     justify-content: center;
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
+
+
+
+
+
+
+
+.timeline-container {
+  margin: 0 auto;
+  width: 70%;
+}
+
+#timeline .timeline-item:after, #timeline .timeline-item:before {
+  content: '';
+  display: block;
+  width: 100%;
+  clear: both;
+}
+
+#timeline {
+  width: 100%;
+  margin: 30px auto;
+  position: relative;
+  padding: 0 20px;
+}
+
+#timeline:before {
+  content: "";
+  width: 3px;
+  height: 94%;
+  background: #4a4e69;
+  left: 50%;
+  top: 0;
+  position: absolute;
+}
+#timeline:after {
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+#timeline .timeline-item {
+  margin-bottom: 50px;
+  position: relative;
+}
+#timeline .timeline-item .timeline-icon {
+  background: #4a4e69;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  margin-left: -23px;
+  border-radius: 50%;
+}
+
+#timeline .timeline-item .timeline-content {
+  width: 45%;
+  background: #fff;
+  padding: 20px;
+}
+#timeline .timeline-item .timeline-content h3 {
+  padding: 15px;
+  background: #4a4e69;
+  color: #fff;
+  margin: -20px -20px 0 -20px;
+
+}
+#timeline .timeline-item .timeline-content p {
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  color: #4a4e69;
+}
+#timeline .timeline-item .timeline-content:before {
+  content: '';
+  position: absolute;
+  left: 45%;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #4a4e69;
+}
+#timeline .timeline-item .timeline-content.right {
+  float: right;
+}
+#timeline .timeline-item .timeline-content.right:before {
+  content: '';
+  right: 45%;
+  left: inherit;
+  border-left: 0;
+  border-right: 7px solid #4a4e69;
+}
+
+.time-stamp {
+    font-size: 14px;
+    color: #4a4e69;
+    font-weight: lighter;
+}
+
+.time-logo {
+    height: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*  ----  Section Portfolio Style  ----  */
 
@@ -177,3 +374,40 @@ p {
     justify-content: center;
 }
 
+
+
+/*  ----  Section footer  ----  */
+
+.contact {
+    background-color: #4a4e69;
+    color: white;
+    padding: 30px 0;
+    width: 100%;
+}
+.contact-icon {
+    height: 20px;
+}
+
+.contact h4 {
+    margin-bottom: 20px;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+.contact a {
+    display: block;
+    color: white;
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.contact-links__media {
+    display: flex;
+}
+
+.contact-links__media li+li {
+    margin-left: 20px;
+}
