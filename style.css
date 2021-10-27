@@ -391,17 +391,6 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*  ----  Section Portfolio Style  ----  */
 
 
@@ -451,6 +440,7 @@ p {
 .contact-links__media {
     display: flex;
 }
+
 
 .contact-links__media li+li {
     margin-left: 20px;
