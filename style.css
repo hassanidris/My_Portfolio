@@ -413,6 +413,13 @@ p {
     font-weight: 100;
 }
 
+.contact a:hover {
+    
+    color: #c9ada7;
+}
+
+
+
 .contact-links__media {
     display: flex;
 }
